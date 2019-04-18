@@ -1,0 +1,18 @@
+{
+  "name": "homework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "start": "gulp",
+    "dev": "gulp dev"
+  },
+  "author": "Marcel Rogowski",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^4.0.0",
+    "gulp-connect": "^5.7.0",
+    "gulp-open": "^3.0.1",
+    "gulp-sass": "^4.0.2"
+  }
+}

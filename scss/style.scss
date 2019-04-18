@@ -1,0 +1,22 @@
+@import "variables";
+@import "mixins";
+@import 'box';
+@import 'fieldGroup';
+@import 'link';
+@import 'row';
+@import 'btn';
+@import 'tooltip';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    @include bgImage;
+    font-family: $text-font;
+    color: $text-primary;
+}
+
+.resetBox {
+    display: none;
+}

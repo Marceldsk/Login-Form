@@ -1,0 +1,25 @@
+//color variables
+$white: #ffffff;
+$blue: #0094bb;
+$gray-1:#acacac;
+$gray-2:#f9f9f9;
+$gray-3:#e5e5e5;
+$gray-4: #7d7d7d;
+$gray-5: #bbb;
+$red: #cc0849;
+
+// bg color 
+$bg-primary: $gray-2;
+$bg-secondary: $gray-3;
+$theme-color: $blue;
+
+//text color
+$text-primary: $gray-4;
+$text-secondary: $gray-1;
+$text-tertiary: $white;
+
+//Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+//font-section
+$text-font: "Montserrat",
+serif;

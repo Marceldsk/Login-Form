@@ -1,0 +1,8 @@
+@mixin bgImage {
+    background-image: url(/img/bg.png);
+    background-size: cover;
+
+    @media only screen and (max-width: 1024px) {
+        background-size: auto;
+    }
+}

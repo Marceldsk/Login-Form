@@ -1,0 +1,8 @@
+.link {
+    color: $theme-color;
+    cursor: pointer;
+
+    &:hover {
+        color: darken($theme-color, 15%);
+    }
+}

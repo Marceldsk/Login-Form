@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+.box {
+  color: #7d7d7d;
+  position: absolute;
+  font-size: 13px;
+  width: 450px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  box-shadow: 5px 5px 10px #888888;
+  font-size: 14px; }
+  @media only screen and (max-width: 768px) {
+    .box {
+      width: 100%; } }
+  .box input[type='checkbox'] {
+    margin-right: 5px; }
+  .box p {
+    padding: 0;
+    margin: 0; }
+  .box .smallText {
+    margin-bottom: 15px;
+    font-size: 12px; }
+  .box .topLoginBox {
+    height: 75px;
+    position: relative;
+    background-color: #0094bb;
+    display: flex; }
+    .box .topLoginBox h1 {
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+      line-height: 75px;
+      font-size: 22px;
+      margin-left: 60px; }
+      @media only screen and (max-width: 400px) {
+        .box .topLoginBox h1 {
+          font-size: 18px; } }
+    .box .topLoginBox .userPhoto {
+      width: 100px;
+      padding: 0 40px; }
+      .box .topLoginBox .userPhoto img {
+        display: block;
+        border: 1px solid #0094bb;
+        top: -10px;
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        border-radius: 100%;
+        overflow: hidden; }
+  .box .centerLoginBox {
+    border: 0.5px solid lightgray;
+    background-color: #f9f9f9;
+    padding: 30px 40px 20px; }
+  .box .bottomLoginBox {
+    border-top: 0.5px solid #bfbfbf;
+    bottom: 0;
+    padding: 25px 40px;
+    background-color: #e5e5e5; }
+
+.fieldGroup {
+  padding-bottom: 20px; }
+  .fieldGroup .error {
+    display: none; }
+  .fieldGroup.invalid {
+    color: #cc0849; }
+    .fieldGroup.invalid .error {
+      display: block; }
+    .fieldGroup.invalid .textBox {
+      border: 1px solid #cc0849; }
+  .fieldGroup .inputWrapper {
+    border-radius: 7px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: inset 0 0 5px #bbb;
+    background-color: #ffffff;
+    border: 1px solid #bbb; }
+  .fieldGroup label {
+    padding-bottom: 5px;
+    display: block; }
+  .fieldGroup .textBox {
+    height: 35px;
+    display: block;
+    width: 100%;
+    margin: auto;
+    padding-left: 15px;
+    font-size: 12px;
+    background: transparent;
+    border: 0; }
+    .fieldGroup .textBox::placeholder {
+      color: #acacac; }
+
+.link {
+  color: #0094bb;
+  cursor: pointer; }
+  .link:hover {
+    color: #00576f; }
+
+.row {
+  display: flex; }
+  .row .right,
+  .row .left {
+    width: 50%; }
+
+.right {
+  text-align: right; }
+
+.btn {
+  border-radius: 4px;
+  padding: 10px 25px;
+  margin-left: 10px;
+  background-color: #0094bb;
+  border: 1px solid #0094bb;
+  color: #ffffff;
+  font-size: 14px; }
+  .btn.btnSecondary {
+    background-color: #ffffff;
+    color: #cc0849;
+    border-color: #cc0849; }
+  .btn:disabled {
+    color: #acacac;
+    background-color: #ffffff;
+    border: 1px solid #acacac; }
+
+.tooltip {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 25px 25px 0;
+  border-color: transparent #0094bb transparent transparent; }
+  .tooltip:after {
+    content: '*';
+    position: absolute;
+    top: 3px;
+    right: -20px;
+    color: #ffffff; }
+
+.tooltipBody {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  padding: 5px;
+  color: #ffffff;
+  border-radius: 4px;
+  font-size: 12px; }
+  .tooltipBody.show {
+    visibility: visible;
+    opacity: 1;
+    background-color: #0094bb; }
+  .tooltipBody:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 5px 0 5px;
+    border-color: #0094bb transparent transparent transparent;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%); }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  background-image: url(/img/bg.png);
+  background-size: cover;
+  font-family: "Montserrat", serif;
+  color: #7d7d7d; }
+  @media only screen and (max-width: 1024px) {
+    body {
+      background-size: auto; } }
+
+.resetBox {
+  display: none; }

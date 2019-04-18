@@ -1,0 +1,21 @@
+.btn {
+    border-radius: 4px;
+    padding: 10px 25px;
+    margin-left: 10px;
+    background-color: $theme-color;
+    border: 1px solid $theme-color;
+    color: $text-tertiary;
+    font-size: 14px;
+
+    &.btnSecondary {
+        background-color: $text-tertiary;
+        color: $red;
+        border-color: $red;
+    }
+
+    &:disabled {
+        color: $text-secondary;
+        background-color: $text-tertiary;
+        border: 1px solid $text-secondary;
+    }
+}

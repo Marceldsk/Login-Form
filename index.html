@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cognifide UI Homework</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Box no.1-->
+    <form class="box loginBox" name="loginBox">
+        <div class="topLoginBox">
+            <div class="userPhoto">
+                <img src="/img/DH.jpg" alt="David Hasselhoff">
+            </div>
+        </div>
+        <div class="centerLoginBox">
+            <div class="fieldGroup">
+                <label for="email">EMAIL ADRESS</label>
+                <div class="inputWrapper">
+                    <span class="tooltip" data-text="Content is required"></span>
+                    <input id="email" class="textBoxEmail textBox" type="text" placeholder="Enter your email adress">
+                </div>
+                <div class="error">Invalid email adress</div>
+            </div>
+            <div class="fieldGroup">
+                <label for="password">PASSWORD</label>
+                <div class="inputWrapper">
+                    <span class="tooltip" data-text="Content is required"> </span>
+                    <input id="password" class="textBox textBoxPassword" type="password"
+                        placeholder="Enter your password">
+                </div>
+                <div class="error">Invalid password</div>
+            </div>
+            <p><input id="remember" type="checkbox"><label for="remember">REMEMBER ME</label> </p>
+        </div>
+        <div class="bottomLoginBox">
+            <div class="right">
+                <span class="link" tabindex="0">Forgotten password?</span>
+                <button type="submit" disabled class="btn loginButton">LOGIN</button>
+            </div>
+        </div>
+    </form>
+
+    <!--Box no2-->
+    <form class="box resetBox" name="resetBox">
+        <div class="topLoginBox">
+            <div class="userPhoto">
+                <img src="/img/DH.jpg" alt="David Hasselhoff">
+            </div>
+            <h1>RESET PASSWORD</h1>
+        </div>
+        <div class="centerLoginBox">
+            <p class="smallText">Hey, it happens to everyone. <br />
+                Just let us know what email adress you use to login <br /> and we'll send you an email with instructions
+            </p>
+            <div class="fieldGroup">
+                <label for="emailNew">EMAIL ADRESS</label>
+                <div class="inputWrapper">
+                    <span class="tooltip" data-text="Content is required"></span>
+                    <input id="emailNew" class="textBoxEmailNew textBox" type="text" placeholder="New email adress">
+
+                </div>
+                <div class="error">Invalid email</div>
+            </div>
+        </div>
+        <div class="bottomLoginBox">
+            <div class="row">
+                <div class="left">
+                    <button type="button" class="btn btnSecondary" id="cancelButton">
+                        CANCEL</span>
+                </div>
+                <div class="right"><button disabled class="btn" type="submit" id="resetButton">RESET BUTTON</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="tooltipBody"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>

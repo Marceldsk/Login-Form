@@ -1,0 +1,48 @@
+.fieldGroup {
+    padding-bottom: 20px;
+
+    .error {
+        display: none;
+    }
+
+    &.invalid {
+        .error {
+            display: block;
+        }
+
+        color: $red;
+
+        .textBox {
+            border: 1px solid $red;
+        }
+    }
+
+    .inputWrapper {
+        border-radius: 7px;
+        overflow: hidden;
+        position: relative;
+        box-shadow: inset 0 0 5px $gray-5;
+        background-color: $text-tertiary;
+        border: 1px solid $gray-5;
+    }
+
+    label {
+        padding-bottom: 5px;
+        display: block;
+    }
+
+    .textBox {
+        height: 35px;
+        display: block;
+        width: 100%;
+        margin: auto;
+        padding-left: 15px;
+        font-size: 12px;
+        background: transparent;
+        border: 0;
+
+        &::placeholder {
+            color: $text-secondary;
+        }
+    }
+}
